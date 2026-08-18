@@ -31,7 +31,7 @@ The agent analyzes the request, identifies the relevant customer and database cr
 The application is implemented as a **LangGraph stateful workflow** consisting of multiple nodes.
 
 <p align="center">
-  <img src="assets/workflow.png" alt="Agent Workflow Architecture" width="700">
+  <img src="workflow.png" alt="Agent Workflow Architecture" width="700">
 </p>
 
 ### Workflow
