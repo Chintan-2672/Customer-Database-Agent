@@ -1,6 +1,6 @@
 import os
 import sqlite3
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
 from typing import Annotated, Dict, List, Optional, Any
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
@@ -27,10 +27,9 @@ class ParsedQuerySchema(BaseModel):
     target_table: Optional[str] = Field(default=None, description="Target table: 'orders', 'customers', 'products', 'interactions', or 'all'")
 
 
-# Initialize LLMs after schema is defined
-# NOTE: double check this model name is correct for your langchain-google-genai version
-# (e.g. "gemini-1.5-flash" / "gemini-2.0-flash" are common valid ids)
-llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash", temperature=0)
+# Initialize Groq LLM after schema is defined
+# GROQ_API_KEY should be stored in your .env file.
+llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
 structured_llm = llm.with_structured_output(ParsedQuerySchema)
 
 
