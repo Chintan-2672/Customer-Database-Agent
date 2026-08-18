@@ -1,0 +1,18 @@
+# Environment variables / API keys
+.env
+
+# Virtual environments
+myenv/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# IDE files
+.vscode/
+.idea/
