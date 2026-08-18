@@ -126,7 +126,7 @@ The user does not need to see or understand the underlying SQL query.
 
 ---
 
-## 🧠 LangGraph State
+## LangGraph State
 
 The workflow maintains a shared state containing information such as:
 
@@ -148,7 +148,7 @@ The project also uses **LangGraph's `MemorySaver` checkpointing mechanism** to m
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 The application currently uses a SQLite database named:
 
@@ -199,20 +199,20 @@ customer_records.db
 
 ---
 
-## ✨ Features
+##  Features
 
-* 💬 Natural-language database interaction
-* 🧠 LLM-powered query analysis
-* 🔎 Entity and criteria extraction
-* 👤 Customer matching
-* ❓ Ambiguity detection
-* 🔄 Interactive clarification workflow
-* 📝 Automatic SQL generation
-* 🗄️ SQLite database integration
-* 📊 SQL query execution
-* 🧾 Natural-language response generation
-* 🔗 Stateful agent workflow using LangGraph
-* 💾 Workflow checkpointing using `MemorySaver`
+* Natural-language database interaction
+* LM-powered query analysis
+* Entity and criteria extraction
+* Customer matching
+*  Ambiguity detection
+* Interactive clarification workflow
+* Automatic SQL generation
+* SQLite database integration
+* SQL query execution
+* Natural-language response generation
+* Stateful agent workflow using LangGraph
+* Workflow checkpointing using `MemorySaver`
 
 ---
 
@@ -305,7 +305,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 Create a `.env` file in the project root and add the required Google Gemini API credentials.
 
@@ -326,7 +326,7 @@ __pycache__/
 
 ---
 
-## ▶️ Running the Application
+##  Running the Application
 
 Start the Streamlit application:
 
@@ -338,7 +338,7 @@ The application will open in your browser.
 
 ---
 
-## 💡 Example Queries
+##  Example Queries
 
 The agent can handle database-related questions such as:
 
@@ -377,7 +377,7 @@ Add screenshots of the Streamlit interface here.
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 * [ ] Add a dedicated intent-routing node for general conversations
 * [ ] Improve detection of vague dates and incomplete queries
@@ -391,7 +391,7 @@ Add screenshots of the Streamlit interface here.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Chintan Badve**
 
