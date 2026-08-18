@@ -31,49 +31,8 @@ The agent analyzes the request, identifies the relevant customer and database cr
 The application is implemented as a **LangGraph stateful workflow** consisting of multiple nodes.
 
 <p align="center">
-  <img src="workflow.png" alt="Agent Workflow Architecture" width="700">
+  <img src="assets/workflow.png" alt="Agent Workflow Architecture" width="700">
 </p>
-
-### Workflow
-
-```text
-                         START
-                           │
-                           ▼
-              ┌──────────────────────────┐
-              │ Query Analyzer &         │
-              │ Entity Extractor         │
-              └────────────┬─────────────┘
-                           │
-                           ▼
-                 ◇ Is Query Ambiguous? ◇
-                    /               \
-                  Yes                 No
-                   │                   │
-                   ▼                   ▼
-          ┌─────────────────┐   ┌─────────────────┐
-          │ Clarification   │   │  SQL Generator  │
-          │ Handler         │   └────────┬────────┘
-          └────────┬────────┘            │
-                   │                     ▼
-                   │             ┌─────────────────┐
-                   │             │ SQL Query       │
-                   │             │ Executor        │
-                   │             └────────┬────────┘
-                   │                      │
-                   │                      ▼
-                   │             ┌─────────────────┐
-                   │             │ Response        │
-                   │             │ Synthesizer     │
-                   │             └────────┬────────┘
-                   │                      │
-                   │                      ▼
-                   │                     END
-                   │
-                   └──────────► Query Analyzer
-```
-
----
 
 ## 🔄 Agent Workflow
 
@@ -314,8 +273,8 @@ Contains the Python dependencies required to run the project.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/<repository-name>.git
-cd <repository-name>
+git clone https://github.com/Chintan-2672/Customer-Database-Agent.git
+cd Customer-Database-Agent
 ```
 
 ### 2. Create a Virtual Environment
