@@ -371,7 +371,8 @@ The exact queries supported depend on the database schema and the capabilities o
 Add screenshots of the Streamlit interface here.
 
 <p align="center">
-  <img src="assets/app_screenshot.png" alt="Application Screenshot" width="850">
+  <img src="assets/o1.png" alt="Application Screenshot" width="850">
+  <img src="assets/o2.png" alt="Application Screenshot" width="850">
 </p>
 
 ---
